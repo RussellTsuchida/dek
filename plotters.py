@@ -3,6 +3,7 @@ import matplotlib
 import os
 import numpy as np
 import scipy.spatial as sp
+import pandas as pd
 
 def matplotlib_config():
     matplotlib.rcParams['pdf.fonttype'] = 42
@@ -124,6 +125,7 @@ def plot_err_versus_dimension_all(Kreflist, Kfinitelist, dlist, Nlist,
     plt.tight_layout()
     plt.savefig(fname + '_step.png', bbox_inches='tight')
     plt.close()
+
 
 def baseline_kernel(max_=1, size=10):
     x1 = np.linspace(-5, 5, size)
